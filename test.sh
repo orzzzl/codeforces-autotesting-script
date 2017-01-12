@@ -11,7 +11,7 @@ do
     cat $f
     echo "#################################"
     echo "your output:"
-    g++ -std=c++11 -Wl,-stack_size,0x100000000 $a.cpp && a.out < $f
+    g++ -std=c++11 -Wl,-stack_size,0x100000000 $a.cpp && ./a.out < $f
     echo ""
     echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
     echo "correct output:"
